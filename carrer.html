@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  
+  <title>TricodeMatrix Careers</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#050816;
+      color:white;
+    }
+
+    .careers{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:80px 8%;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .careers::before{
+      content:'';
+      position:absolute;
+      width:400px;
+      height:400px;
+      background:#00d9ff;
+      filter:blur(150px);
+      opacity:0.12;
+      top:-100px;
+      left:-100px;
+    }
+
+    .careers::after{
+      content:'';
+      position:absolute;
+      width:400px;
+      height:400px;
+      background:#9d4edd;
+      filter:blur(150px);
+      opacity:0.12;
+      bottom:-100px;
+      right:-100px;
+    }
+
+    .career-container{
+      max-width:1100px;
+      width:100%;
+      position:relative;
+      z-index:2;
+    }
+
+    .career-content{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      backdrop-filter:blur(12px);
+      border-radius:30px;
+      padding:60px 40px;
+      text-align:center;
+      box-shadow:0 10px 40px rgba(0,0,0,0.3);
+    }
+
+    .career-tag{
+      display:inline-block;
+      padding:12px 22px;
+      border-radius:50px;
+      background:linear-gradient(90deg,#00d9ff,#9d4edd);
+      font-weight:600;
+      margin-bottom:25px;
+    }
+
+    .career-content h1{
+      font-size:52px;
+      margin-bottom:20px;
+      line-height:1.2;
+    }
+
+    .career-content h1 span{
+      color:#00d9ff;
+    }
+
+    .career-content p{
+      color:#cfcfcf;
+      line-height:1.8;
+      max-width:750px;
+      margin:auto;
+      font-size:17px;
+    }
+
+    .career-boxes{
+      margin-top:50px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:22px;
+    }
+
+    .career-box{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      padding:28px;
+      border-radius:20px;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    .career-box:hover{
+      transform:translateY(-8px);
+      border-color:#00d9ff;
+      box-shadow:0 10px 25px rgba(0,217,255,0.2);
+    }
+
+    .career-contact{
+      margin-top:55px;
+    }
+
+    .career-contact h2{
+      font-size:34px;
+      margin-bottom:15px;
+    }
+
+    .career-email{
+      color:#00d9ff;
+      font-size:22px;
+      margin-bottom:30px;
+      word-break:break-word;
+    }
+
+    .career-btn{
+      padding:15px 35px;
+      border:none;
+      border-radius:50px;
+      background:linear-gradient(90deg,#00d9ff,#9d4edd);
+      color:white;
+      font-size:17px;
+      font-weight:600;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .career-btn:hover{
+      transform:scale(1.05);
+      box-shadow:0 10px 30px rgba(0,217,255,0.35);
+    }
+
+    footer{
+      text-align:center;
+      padding:25px;
+      color:#999;
+      border-top:1px solid rgba(255,255,255,0.08);
+      background:#03050d;
+    }
+
+    @media(max-width:768px){
+
+      .career-content{
+        padding:45px 25px;
+      }
+
+      .career-content h1{
+        font-size:38px;
+      }
+
+      .career-contact h2{
+        font-size:28px;
+      }
+
+      .career-email{
+        font-size:18px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+            <a href="/index.html" style="color: white; text-decoration: none;"><span style="color: rgb(32, 141, 236); text-decoration: none;">Back to Home</span></a>
+          
+
+  <section class="careers">
+
+    <div class="career-container">
+
+      <div class="career-content">
+
+        <div class="career-tag">
+          🚀 Join Our Team
+        </div>
+
+        <h1>
+          Build Your Career With <span>TricodeMatrix</span>
+        </h1>
+
+        <p>
+          We are looking for passionate developers, designers,
+          creators, marketers, and innovators who want to build
+          amazing digital products and grow together with us.
+        </p>
+
+        <div class="career-boxes">
+
+          <div class="career-box">
+            💻 Web Developers
+          </div>
+
+          <div class="career-box">
+            📱 App Developers
+          </div>
+
+          <div class="career-box">
+            🎨 UI/UX Designers
+          </div>
+
+          <div class="career-box">
+            📈 Digital Marketers
+          </div>
+
+        </div>
+
+        <div class="career-contact">
+
+          <h2>Send Your Resume</h2>
+
+          <div class="career-email">
+            📧 tricodematrix@gmail.com
+          </div>
+ </div>
+          <button class="career-btn" id="joinBtn">
+            Join Us
+          </button>
+
+        
+       
+
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+  <footer>
+    © 2026 TricodeMatrix. All Rights Reserved.
+  </footer>
+
+  <script>
+
+    document
+      .getElementById("joinBtn")
+      .addEventListener("click", function () {
+
+        const email = "tricodematrix@gmail.com";
+
+        const subject = "Job Application - TricodeMatrix";
+
+        const body =
+          "Hello TricodeMatrix,%0D%0A%0D%0AI want to apply for a position in your company.%0D%0A%0D%0APlease find my resume attached.";
+
+        window.location.href =
+          `mailto:${email}?subject=${subject}&body=${body}`;
+
+    });
+
+  </script>
+
+</body>
+</html>
